@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CByBB</title>
+    <meta name="description" content="CByBB on GitHub — CodeByBB, BB, B.B." />
+    <meta name="author" content="CByBB" />
+    <link rel="canonical" href="https://cbybb.github.io/" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="apple-touch-icon" href="icon-192.png" />
+    <meta name="theme-color" content="#03060c" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Outfit:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #03060c;
+        --text: #f2f7fa;
+        --muted: rgba(190, 210, 222, 0.72);
+        --line: rgba(220, 235, 245, 0.16);
+        --accent: #8fd6ea;
+        --font: "Outfit", "Segoe UI", sans-serif;
+        --font-display: "Fraunces", Georgia, serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        min-height: 100%;
+      }
+
+      body {
+        min-height: 100svh;
+        display: grid;
+        place-items: center;
+        padding: 2rem 1.25rem;
+        background:
+          radial-gradient(700px 420px at 70% 10%, rgba(74, 168, 196, 0.14), transparent 55%),
+          radial-gradient(520px 360px at 15% 80%, rgba(20, 48, 72, 0.35), transparent 50%),
+          var(--bg);
+        color: var(--text);
+        font-family: var(--font);
+        -webkit-font-smoothing: antialiased;
+      }
+
+      main {
+        width: min(100%, 28rem);
+        text-align: center;
+      }
+
+      img.mark {
+        width: 72px;
+        height: 72px;
+        margin: 0 auto 1.25rem;
+        display: block;
+      }
+
+      h1 {
+        margin: 0 0 0.35rem;
+        font-family: var(--font-display);
+        font-size: clamp(2.4rem, 8vw, 3.2rem);
+        font-weight: 600;
+        letter-spacing: -0.03em;
+        line-height: 1;
+      }
+
+      .aka {
+        margin: 0 0 1.25rem;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      p {
+        margin: 0 0 1.75rem;
+        color: var(--muted);
+        line-height: 1.55;
+      }
+
+      a.btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 2.75rem;
+        padding: 0.65rem 1.2rem;
+        border: 1px solid var(--line);
+        border-radius: 2px;
+        background: rgba(8, 16, 24, 0.45);
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 500;
+        transition: border-color 0.18s ease, background 0.18s ease;
+      }
+
+      a.btn:hover {
+        border-color: rgba(143, 214, 234, 0.45);
+        background: rgba(12, 24, 34, 0.65);
+      }
+
+      footer {
+        margin-top: 2.5rem;
+        color: rgba(160, 190, 210, 0.5);
+        font-size: 0.85rem;
+      }
+
+      footer a {
+        color: var(--muted);
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        color: var(--accent);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <img class="mark" src="icon-192.png" width="72" height="72" alt="CByBB" />
+      <h1>CByBB</h1>
+      <p class="aka">CodeByBB · BB · B.B.</p>
+      <p>Software and experiments on GitHub.</p>
+      <a class="btn" href="https://github.com/CByBB">github.com/CByBB</a>
+      <footer>
+        <a href="mailto:software.vision@dreambuild.cloud">software.vision@dreambuild.cloud</a>
+      </footer>
+    </main>
+  </body>
+</html>
